@@ -24,9 +24,14 @@ end
 #    write item.identifier.without_ext + '/index.html'
 #  end
 #end
+compile '/**/*.slim' do
+  filter :slim
+  layout '/default.*'
 
+  write ext: 'html'
+end
 compile '/**/*' do
   write item.identifier.to_s
 end
 
-layout '/**/*', :erb
+layout '/**/*.slim', :slim
