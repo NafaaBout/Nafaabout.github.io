@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.7.2'
+ruby '3'
 
-gem 'nanoc'
+gem 'nanoc', '~> 4.11'
 gem 'adsf'
 gem 'adsf-live'
 gem 'kramdown'
