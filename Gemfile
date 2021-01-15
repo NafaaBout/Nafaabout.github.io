@@ -11,4 +11,5 @@ gem 'slim'
 group :nanoc do
   gem 'byebug'
   gem 'guard-nanoc'
+  gem 'falcon'
 end
