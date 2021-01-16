@@ -30,6 +30,11 @@ compile '/**/*.slim' do
 
   write ext: 'html'
 end
+compile '/**/*.scss' do
+  filter :sass
+
+  write ext: 'css'
+end
 compile '/**/*' do
   write item.identifier.to_s
 end
