@@ -7,6 +7,7 @@ gem 'adsf'
 gem 'adsf-live'
 gem 'kramdown'
 gem 'slim'
+gem 'sass'
 
 group :nanoc do
   gem 'byebug'
