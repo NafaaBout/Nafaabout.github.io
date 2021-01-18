@@ -24,17 +24,20 @@ end
 #    write item.identifier.without_ext + '/index.html'
 #  end
 #end
+
 compile '/**/*.slim' do
   filter :slim
   layout '/default.*'
 
   write ext: 'html'
 end
+
 compile '/**/*.scss' do
-  filter :sass
+  filter :sass, syntax: :scss
 
   write ext: 'css'
 end
+
 compile '/**/*' do
   write item.identifier.to_s
 end
